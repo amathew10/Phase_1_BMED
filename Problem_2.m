@@ -72,6 +72,7 @@ end
 
 V_m = V_m + V_rest;
 
+%Action potential plot
 figure
 Vm = plot(t,V_m);
 legend(Vm,'Voltage')
@@ -79,7 +80,7 @@ ylabel('Voltage (mV)')
 xlabel('Time (ms)')
 title('Membrane Potential')
 
-
+%Conductance plot
 figure
 gK = plot(t,gbar_K*n.^4);
 hold on
